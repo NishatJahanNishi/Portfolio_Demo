@@ -1,0 +1,529 @@
+/*   General CSS
+   ======================*/
+.no-padding{
+	padding:0;
+	margin:0;
+}
+/*   Font-type
+   ======================*/
+body{
+	
+	font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+
+}/*   End Font-type
+   ======================*/
+   
+/*   Navbar
+   ======================*/
+.navbar-light .navbar-nav .nav-lin .active {
+    color: #303030;
+}/*   End Navbar
+   ======================*/
+
+/*   Preloader
+   ======================*/
+.loader-wrapper{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#FFD452;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #000;
+  
+  animation: loader 3s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}/*   End Preloader
+   ======================*/
+
+/*   Start Index CSS
+   ======================*/
+/*   About(index page)CSS
+   ======================*/
+.about-content h2{
+	font-size:30px;
+	color:#252525;
+}
+
+.about-content h5{
+	font-size:20px;
+	color:#242424;
+}
+.about-content span{
+	
+	color:#ffc000;
+}
+
+.about-content p{
+	font-size:15px;
+	color:#6b6b6b;
+	line-height:30px;
+	
+}
+.about-content button{
+	font-size:15px;
+	color:#141414;
+}
+/*   End about CSS
+   ======================*/
+   
+/*   Expertice CSS
+   ======================*/
+.expertice{
+	background-image: radial-gradient(circle, #e95a1c, #ec6f13, #ed830b, #ec9609, #eba912);
+}
+.expertice h2{
+	font-size:26px;
+}
+.expert-single p{
+	position:relative;
+	font-size:20px;
+}
+.expert-single p:after{
+	position:absolute;
+	content:"";
+	width:1px;
+	height:20px;
+	left: 50%;
+    top: -50%;
+	background:#fff;
+}/*   End expertice CSS
+   ======================*/
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  width: 16.6666%;
+  height: auto;
+  position:relative;
+ 
+}
+.grid-sizer{
+	width:16.6666%;
+}
+
+.grid-item--width2 { 
+     width:33.33333%; 
+}
+
+.button-group button{
+	background:none;
+	border:none;
+	outline:none;
+}/*   End grid item
+   ======================*/
+   
+/*   Masonary CSS
+   ======================*/
+.mymasonary-overlay{
+	position:absolute;
+	background:rgba(57,57,57,0.9);
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	opacity:0;
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+	-o-transition:.5s;
+	transition:.5s;
+	
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-ms-transform:scale(1);
+	-o-transform:scale(1);
+	transform:scale(1);
+	
+}
+.grid-item:hover .mymasonary-overlay{
+	opacity:1;
+	transform:scale(0.9);
+}
+.mymasonary-overlay i{
+	font-size:40px;
+} /*   End Masonary CSS
+   ======================*/
+
+/*   Contact CSS
+   ======================*/
+.contact{
+	position:relative;
+}
+.contact-single{
+	display:block;
+	z-index:1;
+}
+.contact-single i{
+	color:#bcbcbc;
+	border:1px solid #bcbcbc;
+	border-radius:100%;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	
+	-webkit-transition:.5s;
+	-moz-transition:.5s;
+	-ms-transition:.5s;
+	-o-transition:.5s;
+	transition:.5s;
+}
+.contact-single:hover i{
+	color:#fd9736;
+	border:1px solid #fd9736;
+	
+}
+#shoe-1, #shoe-2, #shoe-3, #shoe-4, #shoe-5, #shoe-6{
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	z-index:-1;
+}
+#shoe-1{
+	background:url(../images/p1.png) no-repeat;
+	
+}
+#shoe-2{
+	background:url(../images/p2.png) no-repeat;
+	
+}
+#shoe-3{
+	background:url(../images/p3.png) no-repeat;
+	
+}
+#shoe-4{
+	background:url(../images/p4.png) no-repeat;
+	
+}
+#shoe-5{
+	background:url(../images/p5.png) no-repeat;
+	
+}
+#shoe-6{
+	background:url(../images/p6.png) no-repeat;
+	
+}
+
+.form-single{
+	width:470px;
+}
+.form-row input{
+	border-radius:0;
+	border: 1px solid #cdcdcd;
+}
+
+textarea.form-control{
+	border-radius:0;
+}
+.form-single button{
+	border-radius:0;
+	font-size:14px;
+	font-weight:bold;
+}
+.form-control:focus{
+	color:#495057;
+	background-color:#fff;
+	border:none;
+	outline:0;
+	box-shadow:none;
+}
+
+.form-single button{
+	border-radius:0;
+	font-size:14px;
+	font-weight:bold;
+	border:none;
+}/*   End contact CSS
+   ======================*/
+
+/*   Map CSS
+   ======================*/
+#map{
+	width:100%;
+	height:550px;
+}/*   End map CSS
+   ======================*/
+
+/*   Footer CSS
+   ======================*/
+.footer-text p{
+	font-size:13px;
+}
+
+.social-icons i{
+	background:grey;
+	width:25px;
+	height:25px;
+	line-height:25px;
+	border-radius:100%;
+	color:#fff;
+	
+	
+}
+.social-icons .fa-facebook-f{
+	background:#4C6EF5;
+}
+.social-icons .fa-twitter{
+	background:#f26194;
+}
+.social-icons .fa-pinterest{
+	background:#BA0A21;
+}
+
+.social-icons .fa-instagram{
+	background:#DB4376;
+}/*   End Footer CSS
+   ======================*/
+   /*   End Index CSS
+   ======================*/
+/*   Start Blog CSS
+   ======================*/
+.blog-sizer{
+	width:33.3333%;
+}
+.blog-single {
+  float: left;
+  width: 33.3333%;
+  height: auto;
+  overflow:hidden;
+ 
+}
+.blog-top-text h2{
+	font-size:70px;
+	font-weight:700;
+	text-transform:uppercase;
+	font-family:'Playfair Display',serif;
+}
+.blog-top-text span{
+	font-size:46px;
+	font-weight:400;
+	text-transform:capitalize;
+	
+}
+.heart{
+	width:75px;
+	height:75px;
+}
+.social-text li{
+	list-style:none;
+	
+}
+
+.social-text li a{
+	text-decoration:none;
+	color:#777777;
+	
+	-webkit-transition:.7s;
+	-moz-transition:.7s;
+	-ms-transition:.7s;
+	-o-transition:.7s;
+	transition:.7s;
+}
+
+.social-text li a:hover{
+	background:#ff6a68;
+	color:#fff;
+}
+.post-heading-br{
+	border:1px solid #ff6a68;
+	width:50px;
+	margin:0;
+}
+.post-heading h3{
+	letter-spacing:2px;
+}
+.post-content-img{
+	position:relative;
+}
+.post-content-img-overlay{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+    background:rgba(243,86,84,.7);
+	opacity:0;
+	
+	-webkit-transition:.7s;
+	-moz-transition:.7s;
+	-ms-transition:.7s;
+	-o-transition:.7s;
+	transition:.7s;
+	
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-ms-transform:scale(1);
+	-o-transform:scale(1);
+	transform:scale(1);
+}
+.post-content-img:hover .post-content-img-overlay{
+	opacity:1;
+}
+.post-media-1{
+	display:none;
+}
+.post-media-2{
+	display:none;
+}
+.post-media-3{
+	display:none;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-group i{
+	float:right;
+	margin-top:-25px;
+	margin-right:12px;
+}
+.form-control:focus{
+	border: 1px solid #cdcdcd;
+	outline:0;
+	box-shadow:none;
+}
+.popular-post .media-body h6{
+	font-size:13px;
+	line-height:20px;
+}
+.popular-post .media-body p{
+	font-size:11px;
+	
+}
+.instagram-img img{
+	padding-bottom:10px;
+}
+.popular-tag-list li{
+	flex-basis:120px;
+	border:1px solid #dfdfdf;
+	margin-bottom:15px;
+	text-align:center;
+}
+.popular-tag-list li a{
+	font-size:14px;
+	color:#666666;
+	padding:7px 0;
+	text-decoration:none;
+	
+	-webkit-transition:.7s;
+	-moz-transition:.7s;
+	-ms-transition:.7s;
+	-o-transition:.7s;
+	transition:.7s;
+}
+.popular-tag-list li:hover a{
+	background:#ed2151;
+	color:#fff;
+}
+.category-text a{
+	font-size:16px;
+	text-decoration:none;
+	color:#777;
+	padding-left:7px;
+	font-weight:500;
+}
+.category-text i{
+	font-size:11px;
+	color:#7d7d7d;
+}
+.category-text li{
+	padding-bottom:15px;
+	
+	-webkit-transition:.7s;
+	-moz-transition:.7s;
+	-ms-transition:.7s;
+	-o-transition:.7s;
+	transition:.7s;
+}
+
+.category-text li:hover i{
+	color:#ed2151;
+}
+.category-text li:hover a{
+	color:#2c2f33;
+}
+.category-text li:hover{
+	transform:translateX(5px);
+}
+.media-hidden{
+	display:none;
+}/*  End Blog CSS
+   ======================*/
+.scrollup {
+    position: fixed;
+    bottom: 20px;
+    right: 15%;
+   display:none;
+	
+    
+}
+.scrollup i{
+	font-size:30px;
+	color:#FFD452;
+}
